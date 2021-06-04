@@ -1,0 +1,44 @@
+<html>
+
+<h1>APLICACION</h1>
+
+<p>BIENVENIDOS A LA APLICACION</p>
+
+<script>
+
+    var x, y, n, max;
+    max = 0; 
+    y = 0;
+        //Declaro array vacio de 5 posiciones
+    var listasueldos = new Array(10);
+
+        for (n = 0; n < listasueldos.length; n++) {
+            
+            // pido un numero y lo meto en la posicion i del array
+            x = Number(prompt('Ingrese un sueldo para la lista:', ''));
+            listasueldos[n] =x ;
+        }
+
+
+/* me meustra por consola los sueldos ingresados */
+    console.log(listasueldos);
+
+
+    /* encuentro el mayor ************************* */
+
+        while (y <listasueldos.length){
+            if(listasueldos[y] > max)
+            {        
+                max = listasueldos[y]; 
+                  
+            }   
+          
+            y=y+1;  
+        }
+        document.write('El sueldo mas grande es :' + max);
+
+
+
+    </script>
+
+</html>

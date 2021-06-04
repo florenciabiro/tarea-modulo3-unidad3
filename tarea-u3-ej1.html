@@ -1,0 +1,33 @@
+<html>
+
+<h1>APLICACION</h1>
+
+<p>BIENVENIDOS A LA APLICACION</p>
+
+<script>
+
+    var metros = [0 ,1000, 10000, 30000, 100000];
+    
+     distancia = prompt("Ingrese distancia: ");
+     //z = 0;
+
+        if(distancia >= metros[0] && distancia < metros[1]){
+            alert("Vaya a pie");
+        }
+        else if(distancia >= metros[1] && distancia < metros[2]){
+            alert("Vaya en bicicleta");
+        }
+        else if(distancia >= metros[2] && distancia < metros[3]){
+            alert("vaya en colectivo");
+        }
+        else if(distancia >= metros[3] && distancia < metros[4]){
+            alert("Vaya en auto");
+        } 
+        else{
+            alert("Vaya en avion");
+        }
+    
+    </script>
+
+
+</html>
